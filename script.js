@@ -144,7 +144,7 @@ const deleteLocalTodo = ()=>{
     let todos = JSON.parse(localStorage.getItem("todos"));
     let todoIndex = todos.indexof(todo)
     todos[todoIndex] = inputBox.value
-    localStorage.setItem("todos", JSON.st(todos))
+    localStorage.setItem("todos", JSON.stringify(todos))
  }
 
 
